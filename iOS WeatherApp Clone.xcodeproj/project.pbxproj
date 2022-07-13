@@ -11,6 +11,15 @@
 		AFD21990287C96EB00E61FC6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD2198F287C96EB00E61FC6 /* ContentView.swift */; };
 		AFD21992287C96EC00E61FC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFD21991287C96EC00E61FC6 /* Assets.xcassets */; };
 		AFD21995287C96EC00E61FC6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFD21994287C96EC00E61FC6 /* Preview Assets.xcassets */; };
+		AFD219A0287C98D300E61FC6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD2199F287C98D300E61FC6 /* Constants.swift */; };
+		AFD219A2287C98EF00E61FC6 /* DateFormater.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD219A1287C98EF00E61FC6 /* DateFormater.swift */; };
+		AFD219A5287C993300E61FC6 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFD219A4287C993300E61FC6 /* Launch Screen.storyboard */; };
+		AFD219A7287C9BC600E61FC6 /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD219A6287C9BC600E61FC6 /* SummaryView.swift */; };
+		AFD219A9287C9E1300E61FC6 /* SummaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD219A8287C9E1300E61FC6 /* SummaryViewModel.swift */; };
+		AFD219AB287CA18200E61FC6 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD219AA287CA18200E61FC6 /* APIService.swift */; };
+		AFD219AE287CA2A900E61FC6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = AFD219AD287CA2A900E61FC6 /* Alamofire */; };
+		AFD219B0287CA2F900E61FC6 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD219AF287CA2F900E61FC6 /* WeatherModel.swift */; };
+		AFD219B3287DC4FC00E61FC6 /* APIServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD219B2287DC4FB00E61FC6 /* APIServiceError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +28,15 @@
 		AFD2198F287C96EB00E61FC6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AFD21991287C96EC00E61FC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFD21994287C96EC00E61FC6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AFD2199F287C98D300E61FC6 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		AFD219A1287C98EF00E61FC6 /* DateFormater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormater.swift; sourceTree = "<group>"; };
+		AFD219A4287C993300E61FC6 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		AFD219A6287C9BC600E61FC6 /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
+		AFD219A8287C9E1300E61FC6 /* SummaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewModel.swift; sourceTree = "<group>"; };
+		AFD219AA287CA18200E61FC6 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		AFD219AF287CA2F900E61FC6 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		AFD219B1287CA32100E61FC6 /* iOS-WeatherApp-Clone-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "iOS-WeatherApp-Clone-Info.plist"; sourceTree = SOURCE_ROOT; };
+		AFD219B2287DC4FB00E61FC6 /* APIServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFD219AE287CA2A900E61FC6 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +70,14 @@
 		AFD2198C287C96EB00E61FC6 /* iOS WeatherApp Clone */ = {
 			isa = PBXGroup;
 			children = (
+				AFD219B1287CA32100E61FC6 /* iOS-WeatherApp-Clone-Info.plist */,
 				AFD2198D287C96EB00E61FC6 /* iOS_WeatherApp_CloneApp.swift */,
 				AFD2198F287C96EB00E61FC6 /* ContentView.swift */,
+				AFD2199B287C976600E61FC6 /* Services */,
+				AFD2199C287C977200E61FC6 /* ViewModels */,
+				AFD2199E287C980300E61FC6 /* Models */,
+				AFD2199D287C977900E61FC6 /* Views */,
+				AFD219A3287C98FA00E61FC6 /* Mimiscellaneous */,
 				AFD21991287C96EC00E61FC6 /* Assets.xcassets */,
 				AFD21993287C96EC00E61FC6 /* Preview Content */,
 			);
@@ -65,6 +90,49 @@
 				AFD21994287C96EC00E61FC6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AFD2199B287C976600E61FC6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AFD219AA287CA18200E61FC6 /* APIService.swift */,
+				AFD219B2287DC4FB00E61FC6 /* APIServiceError.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AFD2199C287C977200E61FC6 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AFD219A8287C9E1300E61FC6 /* SummaryViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		AFD2199D287C977900E61FC6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AFD219A6287C9BC600E61FC6 /* SummaryView.swift */,
+				AFD219A4287C993300E61FC6 /* Launch Screen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AFD2199E287C980300E61FC6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AFD219AF287CA2F900E61FC6 /* WeatherModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AFD219A3287C98FA00E61FC6 /* Mimiscellaneous */ = {
+			isa = PBXGroup;
+			children = (
+				AFD2199F287C98D300E61FC6 /* Constants.swift */,
+				AFD219A1287C98EF00E61FC6 /* DateFormater.swift */,
+			);
+			path = Mimiscellaneous;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +151,9 @@
 			dependencies = (
 			);
 			name = "iOS WeatherApp Clone";
+			packageProductDependencies = (
+				AFD219AD287CA2A900E61FC6 /* Alamofire */,
+			);
 			productName = "iOS WeatherApp Clone";
 			productReference = AFD2198A287C96EB00E61FC6 /* iOS WeatherApp Clone.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +182,9 @@
 				Base,
 			);
 			mainGroup = AFD21981287C96EB00E61FC6;
+			packageReferences = (
+				AFD219AC287CA2A900E61FC6 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = AFD2198B287C96EB00E61FC6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,6 +199,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFD219A5287C993300E61FC6 /* Launch Screen.storyboard in Resources */,
 				AFD21995287C96EC00E61FC6 /* Preview Assets.xcassets in Resources */,
 				AFD21992287C96EC00E61FC6 /* Assets.xcassets in Resources */,
 			);
@@ -139,6 +214,13 @@
 			files = (
 				AFD21990287C96EB00E61FC6 /* ContentView.swift in Sources */,
 				AFD2198E287C96EB00E61FC6 /* iOS_WeatherApp_CloneApp.swift in Sources */,
+				AFD219A7287C9BC600E61FC6 /* SummaryView.swift in Sources */,
+				AFD219A0287C98D300E61FC6 /* Constants.swift in Sources */,
+				AFD219A2287C98EF00E61FC6 /* DateFormater.swift in Sources */,
+				AFD219A9287C9E1300E61FC6 /* SummaryViewModel.swift in Sources */,
+				AFD219B0287CA2F900E61FC6 /* WeatherModel.swift in Sources */,
+				AFD219AB287CA18200E61FC6 /* APIService.swift in Sources */,
+				AFD219B3287DC4FC00E61FC6 /* APIServiceError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +352,7 @@
 				DEVELOPMENT_TEAM = 5U4R837TF6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS-WeatherApp-Clone-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +382,7 @@
 				DEVELOPMENT_TEAM = 5U4R837TF6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS-WeatherApp-Clone-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -339,6 +423,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AFD219AC287CA2A900E61FC6 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AFD219AD287CA2A900E61FC6 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AFD219AC287CA2A900E61FC6 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AFD21982287C96EB00E61FC6 /* Project object */;
 }
